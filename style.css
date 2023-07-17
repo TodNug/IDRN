@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bebas+Neue&family=Poppins&family=Roboto:wght@400;700&family=Tilt+Neon&display=swap");
+
+* {
+  font-family: "Bebas Neue", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+h3,
+h2,
+p {
+  font-family: "Barlow Condensed", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  background-image: url(whiteBg.png);
+  transition: all 0.5s ease-in-out;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-between;
+  height: 13vh;
+  z-index: 10;
+}
+nav a {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 50px;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: right;
+  font-size: 1.3rem;
+  z-index: 10;
+}
+.mode {
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: right;
+  transition: all 0.5s ease-in-out;
+}
+.mode img {
+  margin: auto;
+  height: 20px;
+  margin-left: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#moon {
+  transition: all 0.5s ease-in-out;
+}
+
+#sun {
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+.mode img:hover {
+  transform: rotate(50deg);
+}
+nav ul span {
+  color: #000000;
+  padding: 0 15% 0 15%;
+}
+nav ul span li {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+nav ul span li:hover {
+  transform: translateX(10%);
+  box-shadow: rgba(168, 168, 168, 0.54) 0px 3px 0;
+}
+.entrypg {
+  width: 60vw;
+  height: 87vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.entrypg-text {
+  margin-top: 20vh;
+  margin-left: 15vw;
+}
+.entrypg-text h1 {
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.entry-btn ul {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#arrow {
+  height: 20px;
+  transition: all 0.5s ease-in-out;
+}
+#arroww {
+  display: none;
+  height: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.entry-btn ul li {
+  font-size: 1.3rem;
+  margin: 0 50px 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.entry-btn ul li a {
+  color: black;
+}
+.entry-btn ul li:hover {
+  transform: translateX(10%);
+  box-shadow: rgba(168, 168, 168, 0.54) 0px 3px 0;
+}
+.movingbg {
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.movingbg img {
+  position: absolute;
+  top: -13vh;
+  z-index: 0;
+  right: 0;
+  height: 100%;
+}
+
+body.dark {
+  background-image: url(darkBg.png);
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+}
+body.dark .entry-btn ul li a {
+  color: #fff;
+}
+body.dark nav ul span li {
+  color: #fff;
+}
+body.dark #arroww {
+  display: block;
+}
+body.dark #arrow {
+  display: none;
+}
