@@ -12,11 +12,11 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <header>
+  <header id="hdr">
     <nav>
       <a href="/"><img id="logo" src="logo.png" /></a>
       <ul>
-        <span><li>Contacts</li></span>
+        <a href="contact.html"><li>Contact</li></a>
         <div class="mode">
           <img id="sun" src="sun.png" />
           <img id="moon" src="moon.png" />
@@ -25,6 +25,46 @@
     </nav>
   </header>
   <body class="dark">
+    <div id="ctnPrj" class="project-ctn">
+      <div class="exit">
+        <img src="reject.png" id="reject" onclick="closePrj()" />
+      </div>
+      <div class="projects">
+        <div class="message">
+          <h5>J'ai fais que "Hamza" pour l'exemple</h5>
+        </div>
+        <div onclick="open1()" class="img-ctn1">
+          <h1>Hamza</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="/projects_img/FHoO8x7XIAAYqgW.jpeg" alt="" />
+        </div>
+        <div class="img-ctn2">
+          <h1>Gazo</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="/projects_img/FDHL0PrXIAcoDit.jpeg" alt="" />
+        </div>
+        <div class="img-ctn3">
+          <h1>Bosh</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="/projects_img/FVJnPYjWIAEmnWO.jpeg" alt="" />
+        </div>
+        <div class="img-ctn4">
+          <h1>Luv Resval</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="/projects_img/FHoO8xrXIAclVrh.jpeg" alt="" />
+        </div>
+        <div class="img-ctn5">
+          <h1>Soso Maness</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="/projects_img/FRhpu3LXEAMCOEs.jpeg" alt="" />
+        </div>
+        <div class="img-ctn6">
+          <h1>Ninho</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="/projects_img/FHoO8xrXsAIKsor.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
     <div class="entrypg">
       <div class="entrypg-text">
         <h1>IDRN</h1>
@@ -38,10 +78,10 @@
           <ul>
             <img id="arroww" src="arrow_white.png" />
             <img id="arrow" src="arrow_black.png" />
-            <li><a href="projects.html">See my projects</a></li>
+            <li onclick="openPrj()">See my projects</li>
             <img id="arroww" src="arrow_white.png" />
             <img id="arrow" src="arrow_black.png" />
-            <li><a href="#">More about me</a></li>
+            <li onclick="openAbout()">More about me</li>
           </ul>
         </div>
       </div>

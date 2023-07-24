@@ -21,7 +21,7 @@ body {
   background-position: center;
   overflow-x: hidden;
   background-image: url(projects_bg1.png);
-  transition: all 0.3s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
 }
 nav {
   display: flex;
@@ -74,7 +74,7 @@ nav ul {
 }
 nav ul a {
   color: #000000;
-  margin: 0 15% 0 15%;
+  padding: 0 15% 0 15%;
 }
 nav ul a li {
   cursor: pointer;
@@ -82,11 +82,55 @@ nav ul a li {
   text-align: center;
 }
 
-nav ul a li:hover {
+nav ul li:hover {
   transform: translateX(10%);
   box-shadow: rgba(168, 168, 168, 0.54) 0px 3px 0;
 }
 
+.title {
+  margin-left: 15%;
+  margin-top: 100px;
+}
+.title h1 {
+  font-size: 3rem;
+}
+.txtContainer {
+  position: relative;
+  border-top: solid 2px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  height: 60vh;
+  width: 80%;
+  margin: 10px 10%;
+  transition: 0.5s;
+}
+.text {
+  width: 75%;
+  margin-top: 5%;
+  margin-left: 70px;
+  transition: none;
+}
+.text p {
+  margin-top: 40px;
+  transition: none;
+}
+.text h5 {
+  margin-top: 200px;
+  text-align: center;
+}
+.phctn {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.phctn img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
 body.dark {
   background-image: url(projects_bg2.png);
   color: #fff;
@@ -94,91 +138,6 @@ body.dark {
 body.dark nav ul a li {
   color: #fff;
 }
-
-body.light .box1,
-body.light .box2 {
-  box-shadow: rgba(0, 0, 0, 0.408) 0px 12px 28px;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-}
-
-.title h1 {
-  font-size: 3rem;
-  transition: all 0.3s ease-in-out;
-  cursor: default;
-}
-.bigctn1 {
-  margin-top: 250px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.imgctn {
-  flex-basis: 50%;
-  margin-left: 10%;
-}
-.box1 {
-  height: 500px;
-  width: 450px;
-  transform: rotate(-3deg);
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: rgba(144, 144, 146, 0.2) 0px 15px 34px 0px;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-.box1:hover,
-.box2:hover {
-  transform: rotate(0deg);
-}
-.box1 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.text1 {
-  overflow-wrap: break-word;
-  flex-basis: 50%;
-  margin-right: 10%;
-  padding-left: 10%;
-  padding-top: 10%;
-}
-
-.bigctn2 {
-  margin-top: 250px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-}
-.imgctn2 {
-  flex-basis: 50%;
-  margin-right: 10%;
-}
-.box2 {
-  height: 500px;
-  width: 450px;
-  transform: rotate(3deg);
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: rgba(144, 144, 146, 0.2) 0px 15px 34px 0px;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-.box2 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.text2 {
-  overflow-wrap: break-word;
-  flex-basis: 50%;
-  margin-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
-}
-.bigctn2:last-of-type {
-  margin-bottom: 150px;
+body.dark .txtContainer {
+  border-top: solid 2px rgba(255, 255, 255, 0.6);
 }
